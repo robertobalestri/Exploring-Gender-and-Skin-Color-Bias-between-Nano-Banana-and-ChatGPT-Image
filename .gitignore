@@ -179,3 +179,12 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+/paper
+
+/output_normalized_original
+/output_normalized_balanced_norm
+/output_faces_original
+/output_faces_balanced_norm
+/weights
+/output

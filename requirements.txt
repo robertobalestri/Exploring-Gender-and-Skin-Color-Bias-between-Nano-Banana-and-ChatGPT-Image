@@ -1,0 +1,11 @@
+google-genai
+azure-identity
+requests
+pillow
+python-dotenv
+deepface
+opencv-python
+pandas
+tf-keras
+matplotlib
+seaborn

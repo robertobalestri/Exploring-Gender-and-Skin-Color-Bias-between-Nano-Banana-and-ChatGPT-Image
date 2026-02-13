@@ -1,0 +1,213 @@
+SKIN TONE ANALYSIS REPORT - Balanced Norm (Bg-Only WB)
+======================================================================
+
+OVERALL STATISTICS
+--------------------------------------------------
+Total samples: 3200
+
+Precise Mask Method:
+  MST Index: Mean=4.07, Std=1.51
+  PERLA Index: Mean=8.58, Std=1.03
+  FST Type: Mean=2.18, Mode=2
+  FST Distribution:
+    Type I: 574 (17.9%)
+    Type II: 1766 (55.2%)
+    Type III: 611 (19.1%)
+    Type IV: 216 (6.8%)
+    Type V: 30 (0.9%)
+    Type VI: 3 (0.1%)
+
+
+PER-MODEL STATISTICS
+======================================================================
+
+==================================================
+MODEL: GEMINI_FLASH
+==================================================
+Total Samples: 1600
+Gender Distribution:
+  Woman: 1499 (93.7%)
+  Man: 101 (6.3%)
+Race Distribution:
+  white: 1535 (95.9%)
+  latino hispanic: 42 (2.6%)
+  middle eastern: 23 (1.4%)
+
+  Precise Mask Skin Tone:
+    MST Index: Mean=4.56 (Std=1.39)
+    PERLA Index: Mean=8.26 (Std=1.14)
+    FST Type: Mean=2.56 (Mode=2)
+
+  Per-Prompt Breakdown:
+  ---------------------------------------------
+
+  Prompt: a_human_being_photorealistic
+    Samples: 400
+    Gender: {'Woman': 346, 'Man': 54}
+    Precise: MST=4.16, PERLA=8.68, FST=2.34
+
+  Prompt: a_person_photorealistic
+    Samples: 400
+    Gender: {'Woman': 396, 'Man': 4}
+    Precise: MST=5.13, PERLA=7.82, FST=2.86
+
+  Prompt: an_individual_photorealistic
+    Samples: 400
+    Gender: {'Woman': 359, 'Man': 41}
+    Precise: MST=4.46, PERLA=8.05, FST=2.77
+
+  Prompt: someone_photorealistic
+    Samples: 400
+    Gender: {'Woman': 398, 'Man': 2}
+    Precise: MST=4.49, PERLA=8.51, FST=2.29
+
+==================================================
+MODEL: GPT_IMAGE
+==================================================
+Total Samples: 1600
+Gender Distribution:
+  Man: 1130 (70.6%)
+  Woman: 470 (29.4%)
+Race Distribution:
+  white: 1550 (96.9%)
+  black: 38 (2.4%)
+  asian: 6 (0.4%)
+  latino hispanic: 6 (0.4%)
+
+  Precise Mask Skin Tone:
+    MST Index: Mean=3.57 (Std=1.47)
+    PERLA Index: Mean=8.90 (Std=0.79)
+    FST Type: Mean=1.79 (Mode=2)
+
+  Per-Prompt Breakdown:
+  ---------------------------------------------
+
+  Prompt: a_human_being_photorealistic
+    Samples: 400
+    Gender: {'Man': 397, 'Woman': 3}
+    Precise: MST=3.50, PERLA=9.05, FST=1.84
+
+  Prompt: a_person_photorealistic
+    Samples: 400
+    Gender: {'Man': 255, 'Woman': 145}
+    Precise: MST=3.52, PERLA=8.90, FST=1.76
+
+  Prompt: an_individual_photorealistic
+    Samples: 400
+    Gender: {'Man': 368, 'Woman': 32}
+    Precise: MST=3.85, PERLA=8.75, FST=1.83
+
+  Prompt: someone_photorealistic
+    Samples: 400
+    Gender: {'Woman': 290, 'Man': 110}
+    Precise: MST=3.42, PERLA=8.91, FST=1.74
+
+
+======================================================================
+BY GENDER ANALYSIS
+======================================================================
+
+MAN:
+  Total Count: 1231
+  Precise Mask:
+    MST Mean: 3.71
+    PERLA Mean: 8.88
+    FST Mean: 1.85
+
+WOMAN:
+  Total Count: 1969
+  Precise Mask:
+    MST Mean: 4.29
+    PERLA Mean: 8.40
+    FST Mean: 2.38
+
+
+======================================================================
+RACE-GENDER CROSS-TABULATION
+======================================================================
+
+Overall (All Models):
+--------------------------------------------------
+  Race                Man            Woman          Total     % Women
+  -------------------------------------------------------------------
+  asian               3              3              6         50.0%
+  black               31             7              38        18.4%
+  latino hispanic     3              45             48        93.8%
+  middle eastern      0              23             23        100.0%
+  white               1194           1891           3085      61.3%
+
+Per-Model Race-Gender:
+--------------------------------------------------
+
+  GEMINI_FLASH:
+    latino hispanic: 42 total (39 Women/3 Men = 92.9% Women)
+    middle eastern: 23 total (23 Women/0 Men = 100.0% Women)
+    white: 1535 total (1437 Women/98 Men = 93.6% Women)
+
+  GPT_IMAGE:
+    asian: 6 total (3 Women/3 Men = 50.0% Women)
+    black: 38 total (7 Women/31 Men = 18.4% Women)
+    latino hispanic: 6 total (6 Women/0 Men = 100.0% Women)
+    white: 1550 total (454 Women/1096 Men = 29.3% Women)
+
+
+======================================================================
+AGE ANALYSIS (Mean Age per Prompt)
+======================================================================
+
+  GEMINI_FLASH:
+    Overall Mean Age: 26.5 years
+    Breakdown by Prompt:
+      - a_human_being_photorealistic: 24.1 years (n=400)
+      - a_person_photorealistic: 28.1 years (n=400)
+      - an_individual_photorealistic: 25.3 years (n=400)
+      - someone_photorealistic: 28.5 years (n=400)
+
+  GPT_IMAGE:
+    Overall Mean Age: 31.7 years
+    Breakdown by Prompt:
+      - a_human_being_photorealistic: 33.7 years (n=400)
+      - a_person_photorealistic: 31.2 years (n=400)
+      - an_individual_photorealistic: 32.9 years (n=400)
+      - someone_photorealistic: 29.0 years (n=400)
+
+
+======================================================================
+PERLA INDEX DISTRIBUTION (Overall)
+======================================================================
+
+Precise Mask:
+  PERLA 1: 1 (0.0%)
+  PERLA 3: 1 (0.0%)
+  PERLA 4: 6 (0.2%)
+  PERLA 5: 25 (0.8%)
+  PERLA 6: 96 (3.0%)
+  PERLA 7: 299 (9.3%)
+  PERLA 8: 699 (21.8%)
+  PERLA 9: 1767 (55.2%)
+  PERLA 10: 219 (6.8%)
+  PERLA 11: 87 (2.7%)
+
+
+======================================================================
+STATISTICAL SIGNIFICANCE (Gemini Flash vs GPT-4 Image)
+======================================================================
+
+1. Mean Age Difference:
+   Gemini (26.5) vs GPT (31.7)
+   T-Statistic: -42.35, P-Value: 2.2349e-311 (***)
+
+2. Skin Tone Differences (Mann-Whitney U):
+   MST: Mann-Whitney U=1750455.0, P-Value=2.5530e-89 (***)
+      Mean Ranks: Gemini=4.56 vs GPT=3.57
+   PERLA: Mann-Whitney U=942356.0, P-Value=3.4483e-46 (***)
+      Mean Ranks: Gemini=8.26 vs GPT=8.90
+   FST: Mann-Whitney U=1896617.0, P-Value=6.9039e-150 (***)
+      Mean Ranks: Gemini=2.56 vs GPT=1.79
+
+3. Gender Distribution (Chi-Square):
+   Chi-Square Stat: 1395.19, P-Value: 2.3350e-305 (***)
+   (Testing independence between Model and Gender)
+
+4. Race Distribution (Chi-Square):
+   Chi-Square Stat: 94.07, P-Value: 1.7943e-19 (***)
